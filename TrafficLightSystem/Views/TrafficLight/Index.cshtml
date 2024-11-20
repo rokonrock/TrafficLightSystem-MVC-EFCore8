@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Traffic Light System";
+}
+<div class="traffic-light-container">
+    <div class="light red-light @(ViewData["CurrentColor"] == "Red" ? "active" : "")"></div>
+    <div class="light yellow-light @(ViewData["CurrentColor"] == "Yellow" ? "active" : "")"></div>
+    <div class="light green-light @(ViewData["CurrentColor"] == "Green" ? "active" : "")"></div>
+</div>
